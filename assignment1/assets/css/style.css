@@ -14,7 +14,6 @@ body {
 /* 	margin:0;
 */ 	box-sizing: border-box;
 }
-/* this is a change */
 .container {
 	width: 100%;
 	max-width: 960px;
@@ -29,14 +28,17 @@ body {
 	overflow: auto;
 	border-bottom: 2px solid #ccc;
 	position: fixed;
+	top:0;
 	width: 100%;
 }
 .wrapper {
 	min-height:100%;
 	height:auto;
 	height:100%;
-/*	width:100%;*/
-	margin:0 auto -4em;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	clear: both;
 }
 #logo {
 	width: 275px;
@@ -96,21 +98,6 @@ a:hover,a:focus,a:active {
 img:hover, img:focus, img:active, input:hover, input:focus, input:active {
 	outline: 3px solid #4aaaa5;
 }
-/*#name {
-	clear:both;
-	position:fixed;
-	margin:0 0 0 10%;
-	float:left;
-	height:100%;
-	width:275px;
-	color:#fff;
-	background-color:#4aaaa5;
-	text-align:center;
-	padding:30px;
-	font-size:30px;
-	font-weight:600;
-}
-*/
 
 nav {
 	float: right;
@@ -129,30 +116,20 @@ nav {
 	padding:0 20px 0 20px;
 }
 .main-content {
-/*	position:fixed;
-*/	font-size: 20px;
+	font-size: 20px;
 	line-height: 30px;
-/*	padding-top:130px;
-*/	width:100%;
-	max-width:960px;
-/*	height:70%;
-*/
-	padding: 130px 30px 0 30px;
-/*	margin:0 auto;*/
+	float:left;
+	width:100%;
+	max-width:650px;
+	padding: 0 30px 0 30px;
+	margin:130px auto 0;
 	background-color:#fff;
 	border-color:#ccc;
 	border-style:solid;
 	border-width:1px;
-	clear: both;
-/*	overflow:auto;
-*/}
+	overflow:auto;
+}
 
-/*.container {
-	width: 100%;
-	max-width: 960px;
-	margin: 0 auto;
-	clear: both;
-}*/
 #main-header {
 	border-color:#ccc;
 	border-style:solid;
@@ -169,18 +146,16 @@ nav {
 	height:200px;
 }
 .side-bar {
-	position:fixed;
-	top:130px;
-	left:690px;
-	margin-left:10%;
-	width:270px;
+	float:right;
+	margin-top:130px;
+	width:100%;
+	max-width:270px;
 	height:200px;
 	padding: 0 30px 0 30px;
 	background-color:#fff;
 	border-color:#ddd;
 	border-style:solid;
 	border-width:1px;
-	overflow:auto;
 }
 #side-bar-header {
 	text-align:left;
@@ -220,18 +195,10 @@ nav {
 	border-top-style:solid;
 	padding: 30px 0 0 0;
 	clear:both;
-
 }
 .push {
 	height:90px;
 	clear:both;
-/*	width:100%;
-	font-family:'Georgia',Times, Times New Roman, serif;
-	background-color:#ffffff;
-	border-color:#cccccc;
-	border-bottom-width:2px;
-	border-bottom-style:solid;
-	padding: 0 10% 0 10%;*/
 }
 #inputbox {
 	width:100%;
@@ -340,7 +307,7 @@ p {
 	position:absolute;
 	top:800px;
 	left:10%;
-/*	padding: 0 30px 0 30px;*/
+	padding: 0 30px 0 30px;
 	margin:0;
 	width:650px;
 	height:200px;
