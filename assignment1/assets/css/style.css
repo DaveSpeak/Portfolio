@@ -121,7 +121,7 @@ nav {
 	float:left;
 	width:100%;
 	max-width:650px;
-	padding: 0 30px 0 30px;
+	padding: 0 30px;
 	margin:130px auto 0;
 	background-color:#fff;
 	border-color:#ccc;
@@ -216,28 +216,23 @@ nav {
 	color:#fff;
 	margin:10px 0 15px 0;
 }
-
-.image-container-L {
+.image-container {
 	position: relative;
-	float:left;
-	width:275px;
-	height:205px;
-	margin:30px 0 0 0;
-	z-index:1;
-}
-.image-container-R {
-	position:relative;
 	float:right;
 	width:275px;
 	height:205px;
 	margin:30px 0 0 0;
 	z-index:1;
 }
-
-.portfolio-image {
+.image-container:nth-child(even){
+	float:left;
+}
+.image-container:last-child {
+	margin-bottom:30px;
+}
+.image-container img{
 	width:100%;
-	height:100%;
-	z-index: 1;
+	border:0 none;
 }
 
 .image-text {
