@@ -7,8 +7,8 @@ body {
 	font-family:'Arial','Helvetica Neue',  Helvetica, sans-serif;
 	background-image:url(../images/fresh_snow.png);
 	
-	background-color:yellow;
-/*	overflow:auto;
+/*	background-color:yellow;
+*//*	overflow:auto;
 */}
 * {
 	box-sizing: border-box;
@@ -271,6 +271,9 @@ p {
 		width:100%;
 		margin-bottom:40px;
 	}
+	.image-container:last-child {
+		margin-bottom:70px;
+}
 	.image-text {
 		position:relative;
 		bottom:80px;
